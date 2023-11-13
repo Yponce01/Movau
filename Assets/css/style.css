@@ -1,15 +1,306 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*inicio de estilos*/
+
+
+
 *{
     box-sizing: border-box;
+}
+body {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
 }
 a {
     text-decoration: none;
     color: #121212;
 }
 
-.lista{
-   display: flex;
-   justify-content: center;
-   list-style: none;
-   gap:15px;
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.0rem 8.75rem;
+}
+.logo {
+    width: 7.0rem;
+    height: auto;
+    flex-shrink: 0;
+}
+.menu-nav {
+    display: flex;
+    color: #121212;
+    font-family: Poppins;
+    font-size: 110%;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    gap: 107px;
+    text-align: center;
+    padding-top: 10px;
+  
+}
+.menu-nav a:hover {
+    
+    border-bottom: 5px solid #C298A5 ;
+    
+    
+    
+    transition: ease 0.3s;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between ;
+    gap: 20px;
+    font-size: 1.2rem;
+    padding-top: 10px;
+    color: #121212;
+}
+
+.background-image {
+    background-image:linear-gradient(0deg,rgba(0, 0, 0, 0.918),rgba(0, 0, 0, 0.918)), url(../images/background-image.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    height: 87.5556vh;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
     
 }
+.text h1 {
+    font-weight: 700;
+    text-align: center;
+    font-size: 300%;
+
+}
+.text p {
+    font-weight: 400;
+    padding-top: 15px;
+    padding: 1rem 31rem ;
+    text-align: center;
+    line-height: 27px;
+    
+}
+
+.sale-products {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    
+}
+.sales h2 {
+    font-size: 150%;
+    font-weight: bold;
+    padding: 5.0rem 8.75rem 2.5rem 8.75rem;
+    text-align: left;
+}
+
+.tarjeta {
+    width: 301px;
+    height: 18.688rem;
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
+}
+.discount{
+    color: white;
+    background-color: #121212;
+    padding: 8px 25px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 15px 115px;
+    position: absolute;
+}
+.heart {
+    font-size: 1rem;
+    position: absolute;
+    padding: 10px;
+    margin-left: 253px;
+    margin-top: 10px;
+}
+
+.imagen {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.contenido {
+    padding: 20px;
+}
+
+.titulo {
+    font-size: 1.2em;
+    font-weight: regular;
+    margin-bottom: 10px;
+}
+
+.precio {
+    font-size: 1.1em;
+    color: #121212;
+    font-weight: bold;
+}
+
+.bag-price {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.bag {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+    padding: 11px 14px;
+    font-size: 1.2rem;
+    margin-top: -15px;
+   
+}
+.ver-mas {
+    background-color: #96757f;
+    color: white;
+    font-weight: regular;
+    padding: 13px 52.5px;
+    display: flex;
+    justify-content: center;
+    margin: 37px 620px;
+    border-radius: 50px;
+}
+.boxes {
+    margin: 0 7.75rem;
+    padding-top: 3rem;
+}
+.box-uno   {
+    display: flex;
+    justify-content: center;
+    gap: 440px;
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+}
+.box-uno-imagen img {
+    width: 250%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px ;
+}
+.box-uno-texto {
+    padding: 73px 0;
+}
+.box-uno-texto h2 {
+    font-size: 150%;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+.box-uno-texto p {
+    font-size: 120%;
+    line-height: 30px;
+    padding-bottom: 50px ;
+}
+.box-uno-texto a {
+    color: white;
+    background-color: #96757f;
+    font-weight: regular;
+    padding: 13px 52.5px;
+    border-radius: 50px;
+}
+
+.manage {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    color: #121212;
+    padding: 1.25rem 0 5rem 0;
+}
+footer {
+    background-color: #96757f;
+   
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 7.75rem;
+    color: white;
+    height: 57px;
+    padding: 35px 0;
+
+
+}
+.social {
+    display: flex;
+    justify-content: end;
+    gap: 15px;
+    font-size: 1.2rem;
+    margin-top: -8px;
+
+}
+.icon {
+    color: #96757f;
+    background-color: white;
+    padding: 7px 12px;
+    border-radius: 50px;
+   
+}
+
+
+
+
